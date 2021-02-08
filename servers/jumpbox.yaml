@@ -1,15 +1,20 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Description: " Create an Amazon EC2 instance which acts as the Bastion Host. This example creates an EC2 security group for the instance to give you SSH access."
 Parameters:
+ ProjectName:
+  Description: An environment name that should match the name used to create the network.
+  Type: String
+  Default: Udagram
+
  EnvironmentName:
   Description: An environment name that should match the name used to create the network.
   Type: String
-  Default: Udacity 
+  Default: Dev
 
  KeyName: 
   Description: "Name of an existing EC2 KeyPair to enable SSH access to the instance"
   Type: "AWS::EC2::KeyPair::KeyName"
-  Default: AmitTestKP
+  Default: UdagramTestKeyPair
   ConstraintDescription: "must be the name of an existing EC2 KeyPair."
 
  AMI:
