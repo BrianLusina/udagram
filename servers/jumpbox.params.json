@@ -11,8 +11,13 @@
         "ParameterKey": "AMI",
         "ParameterValue": "ami-0438616cef15ba2ca"
     },
+
     {
         "ParameterKey": "InstanceType",
-        "ParameterValue": "t3.medium"
+        "ParameterValue": "t2.medium"
+    },
+    {
+        "ParameterKey": "KeyName",
+        "ParameterValue": "UdagramTestKeyPair"
     }
 ]
