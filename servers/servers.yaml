@@ -20,7 +20,7 @@ Parameters:
   AMI:
     Description: The machine image to be used. Please use Ubuntu Machine Image Specific to your region. Default is set to an AMI in the af-south-1 region.
     Type: String
-    Default: ami-0438616cef15ba2ca
+    Default: ami-0fcf986c07ff1a0c2
 
 Resources:
   # Whitelist traffic from the internet to our load balancer
@@ -236,10 +236,10 @@ Resources:
       - WebAppLoadBalancer
     Properties:
       TargetType: instance
-      HealthCheckIntervalSeconds: 10
+      HealthCheckIntervalSeconds: 16
       HealthCheckPath: /
       HealthCheckProtocol: HTTP
-      HealthCheckTimeoutSeconds: 8
+      HealthCheckTimeoutSeconds: 15
       HealthyThresholdCount: 2
       Port: 80
       Protocol: HTTP

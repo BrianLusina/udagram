@@ -42,3 +42,36 @@ Then create the Web Stack by running the below command:
 ```
 ./create-stack <NAME-OF-STACK> servers/servers.yaml networking/servers.params.json <REGION>
 ```
+
+> <NAME-OF-STACK> is the name you intend to give your stack & <REGION> is the region you intend to deploy your stack. If a region is not specified, the default is used by the aws cli as specified in the configuration when setting up aws cli.
+
+## Images
+
+The below screenshots indicate the infrastructure setup with the cloud formation configuration
+
+![auto-scaling-groups](./images/auto-scaling-groups.png)
+> Auto Scaling Groups
+
+![cloud-formation-stacks](./images/cloud-formation-stacks.png)
+> Cloud Formation Stacks
+
+![ec2-instances](./images/ec2-instances.png)
+> EC2 instances
+
+![ec2-volumes](./images/ec2-volumes.png)
+> EC2 Volumes
+
+![elastic-ip-addresses](./images/elastic-ip-addresses.png)
+> Elastic IP Addresses
+
+![load-balancer](./images/load-balancer.png)
+> Load Balancer
+
+![security groups](./images/security-groups.png)
+> Security Groups
+
+![target-groups](./images/target-groups.png)
+> Target Groups
+
+![target-groups](./images/website.png)
+> Website
