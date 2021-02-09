@@ -89,7 +89,7 @@ Resources:
               Service:
                - "ec2.amazonaws.com"
             Action:
-              - "sts:AssumeRule"
+              - "sts:AssumeRole"
       Path: "/"
 
   #instace profile contains the IAM Role name(s) that we want to associate to our auto scaling EC2 Servers
@@ -246,7 +246,7 @@ Resources:
       UnhealthyThresholdCount: 5
       VpcId: 
         Fn::ImportValue:
-          Fn::ImportValue: !Sub "${EnvironmentName}-VPCID"
+          Fn::Sub: "${EnvironmentName}-VPCID"
 
 Outputs:
   URL:
