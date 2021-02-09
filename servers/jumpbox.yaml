@@ -35,7 +35,7 @@ Resources:
    InstanceType: !Ref InstanceType
    SecurityGroupIds: 
     - !Ref InstanceSecurityGroup
-   KeyName: !Ref KeyName
+  #  KeyName: !Ref KeyName
    ImageId: !Ref AMI
 
    SubnetId: 
