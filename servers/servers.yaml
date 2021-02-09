@@ -145,7 +145,7 @@ Resources:
       AdjustmentType: ChangeInCapacity
       AutoScalingGroupName:
         Ref: WebAppGroup
-      CoolDown: "60"
+      Cooldown: "60"
       ScalingAdjustment: "-1"
 
   WebServerScaleDownPolicy:
@@ -154,7 +154,7 @@ Resources:
       AdjustmentType: ChangeInCapacity
       AutoScalingGroupName:
         Ref: WebAppGroup
-      CoolDown: "60"
+      Cooldown: "60"
       ScalingAdjustment: "-1"
 
   CPUAlarmHigh:
